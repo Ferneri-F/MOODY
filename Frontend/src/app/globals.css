@@ -23,3 +23,16 @@ h1 {
   font-size: 5em;
   margin-left: 25px; /* You can adjust the size to your preference */
 }
+
+
+
+.horizontal-scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.horizontal-scroll-item {
+  display: inline-block;
+  width: 100px;
+  margin-right: 5px;
+}

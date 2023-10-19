@@ -6,6 +6,16 @@ import { dummyData } from '@/data/dummydata'
 import PageContent from '@/components/PageContent';
 
 export const revalidate = 0;
+
+
+const HorizontalScroll = () => {
+  return (
+    <div className="horizontal-scroll">
+      {<PageContent songs={dummyData}/>}
+    </div>
+  );
+};
+
 const ProfilePage = () => {
     return (
       <>
@@ -38,6 +48,11 @@ const ProfilePage = () => {
                       items-center
                       ml-5
                       " >Jack glenhall</h1>
+
+                      <p>
+                        testing testing testing 
+                      </p>
+
                     </div>
                   </div>
                 </Header>  
@@ -48,7 +63,11 @@ const ProfilePage = () => {
                     </h2>
                 </div>
                   <div >
-                    <PageContent songs={dummyData}/>
+                    <HorizontalScroll>
+                      <div className="horizontal-scroll-item"> item </div>
+                      <div className="horizontal-scroll-item"> item2 </div>
+                      <div className="horizontal-scroll-item"> item3 </div>
+                    </HorizontalScroll>
                   </div>
                 </div>
         </div>
